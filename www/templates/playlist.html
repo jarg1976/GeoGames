@@ -1,0 +1,26 @@
+<ion-view view-title="Distritos">
+	<ion-content>
+		<div class="card">
+			<div class="item item-text-wrap">
+				Breve descrição do jogo
+			</div>
+		</div>
+		<div class="list">
+			<form ng-submit="doPlay()">
+				<div class="list">
+					<label class="item item-input item-floating-label">
+						<span class="input-label">Name</span>
+						<input type="text" placeholder="Name" ng-model="player.name">
+					</label>
+					<label class="item item-input item-floating-label">
+						<span class="input-label">Email</span>
+						<input type="password" placeholder="Email" ng-model="player.email">
+					</label>
+					<label class="item">
+						<button class="button button-block button-positive" type="submit">Iniciar</button>
+					</label>
+				</div>
+			</form>
+		</div>
+	</ion-content>
+</ion-view>

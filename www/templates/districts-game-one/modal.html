@@ -1,0 +1,22 @@
+<ion-modal-view>
+	<ion-header-bar>
+		<h1 class="title">Resposta</h1>
+		<div class="buttons">
+			<button class="button button-assertive" ng-click="closeModal()">Cancelar</button>
+		</div>
+	</ion-header-bar>
+	<ion-content>
+		<form class="padding" ng-submit="doAnswer()">
+			<div class="list">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Nome do distrito</span>
+					<input type="text" placeholder="{{answer.districtCode}}" ng-model="answer.value">
+				</label>
+				<input type="hidden" ng-model="answer.districtCode">
+				<label class="item">
+					<button class="button button-block button-positive" type="submit">Guardar</button>
+				</label>
+			</div>
+		</form>
+	</ion-content>
+</ion-modal-view>
